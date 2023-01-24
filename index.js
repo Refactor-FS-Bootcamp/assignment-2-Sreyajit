@@ -1,18 +1,18 @@
+// Hello, object 
 let user = {};
-console.log(user);
 user= {
     name:"John",
     };
-console.log(user);
 user["surname"]= "Smith";
-console.log(user);
 user.name="Pete";
-console.log(user);
 delete user["name"];
-console.log(user);
+
+// Check for emptiness 
 function isEmpty(obj){
     return (Object.keys(obj).length==0);
 }
+
+// Sum object properties 
 function sumObject(obj){
     let sum = 0;
         for (var i=0; i<obj.length; i++){
@@ -22,6 +22,8 @@ function sumObject(obj){
     }
     return sum;
 }
+
+// Multiply numeric property values by 2 
 function multiplyNumeric(obj){
     for (var i=0; i < obj.length; i++){
         if (typeof obj[i]=="number"){
