@@ -12,16 +12,19 @@ function isEmpty(obj){
     return (Object.keys(obj).length==0);
 }
 
-// Sum object properties 
-function sumObject(obj){
-    let sum = 0;
-        for (var i=0; i<obj.length; i++){
-        if (typeof obj[i]=="number"){
-            sum+= obj[i];
+// Sum object properties updated
+    let salaries={};
+    let sum;
+    if (Object.keys(salaries).length==0){
+        sum=0;
+    }
+    else{
+        for (var i=0; i<salaries.length; i++){
+            if (typeof obj[i]=="number"){
+                sum+= obj[i];
+            }
         }
     }
-    return sum;
-}
 
 // Multiply numeric property values by 2 
 function multiplyNumeric(obj){
